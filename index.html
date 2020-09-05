@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Drum Kit</title>
+    <link
+      rel="shortcut icon"
+      href="imgs/NovusTerraLogo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body>
+    <head>
+      <h1 class="center-text">JS Drum Kit</h1>
+    </head>
+    <main>
+      <!-- HTML Drums -->
+      <div class="keys" draggable="false">
+        <div class="key center-text" data-key="65">
+          <kbd>A</kbd>
+          <span class="sound">crash1</span>
+        </div>
+        <div class="key center-text" data-key="83">
+          <kbd>S</kbd>
+          <span class="sound">crash2</span>
+        </div>
+        <div class="key center-text" data-key="68">
+          <kbd>D</kbd>
+          <span class="sound">crash3</span>
+        </div>
+        <div class="key center-text" data-key="70">
+          <kbd>F</kbd>
+          <span class="sound">snare</span>
+        </div>
+        <div class="key center-text bdrum" data-key="32">
+          <kbd>space</kbd>
+          <span class="sound">bdrum</span>
+        </div>
+        <div class="key center-text" data-key="74">
+          <kbd>J</kbd>
+          <span class="sound">tom1</span>
+        </div>
+        <div class="key center-text" data-key="75">
+          <kbd>K</kbd>
+          <span class="sound">tom2</span>
+        </div>
+        <div class="key center-text" data-key="76">
+          <kbd>L</kbd>
+          <span class="sound">tom3</span>
+        </div>
+        <div class="key center-text" data-key="186">
+          <kbd>;</kbd>
+          <span class="sound">tom4</span>
+        </div>
+      </div>
+      <!-- End HTML Drums -->
+
+      <!-- Key-audio binding -->
+      <audio data-key="65" src="sounds/80s-CRASH1.wav"></audio>
+      <audio data-key="83" src="sounds/80s-CRASH2.wav"></audio>
+      <audio data-key="68" src="sounds/80s-CRASH3.wav"></audio>
+      <audio data-key="70" src="sounds/80s-SNARE1.wav"></audio>
+      <audio data-key="32" src="sounds/80s-Bdrum1.wav"></audio>
+      <audio data-key="74" src="sounds/80s-TOM1.wav"></audio>
+      <audio data-key="75" src="sounds/80s-TOM2.wav"></audio>
+      <audio data-key="76" src="sounds/80s-TOM3.wav"></audio>
+      <audio data-key="186" src="sounds/80s-TOM5.wav"></audio>
+      <!-- End key-audio binding -->
+    </main>
+
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

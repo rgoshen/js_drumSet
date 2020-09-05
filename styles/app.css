@@ -1,0 +1,80 @@
+@font-face {
+  font-family: titleFont;
+  src: url('../fonts/amadeus_1/AMADEUS_.TTF');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  background: url('../imgs/drum_set.jpg') rgba(0, 0, 0, 0.7);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.center-text {
+  text-align: center;
+}
+
+h1 {
+  font-family: titleFont;
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  color: white;
+  margin: 1.5rem;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: 0.5rem solid silver;
+  border-radius: 50%;
+  margin: 1rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all .07s ease;
+  background: rgba(0, 0, 0, 0.4);
+  color: whitesmoke;
+  text-shadow: 0 0 .5rem black;
+}
+
+.key:hover{
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+.bdrum {
+  padding: 4rem 2rem;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 3rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
