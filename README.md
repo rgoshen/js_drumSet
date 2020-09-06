@@ -1,5 +1,5 @@
 # js_drumSet
-First project of 30 days of javaScript
+First project of 30 days of javaScript Challenge.
 
 This uses HTML5, CSS and vanilla javaScript.  This is not responsive as of right now.
 
